@@ -3,4 +3,13 @@ const swiper = new Swiper('.swiper', {
 	spaceBetween: 10,
 	slidesPerView: 3,
 	autoHeight: true,
+
+	navigation: {
+		nextEl: '.next',
+		prevEl: '.prev',
+	},
+
+	autoplay: {
+		delay: 3000,
+	},
 });
