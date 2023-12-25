@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+
+*{
+	font-family: 'Caveat', cursive;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+}
+.header_logo {
+}
+
+.header_logo {
+	background-color: #8fe859;
+	color: #fff;
+	font-size: 30px;
+	font-weight: 700;
+}
+.header_link {
+	color: #6c6c6c;
+	font-size: 16px;
+	font-weight: 700;
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+	height: 100px;
+	align-items: center;
+}
+.header_logo {
+	background-color: #8fe859;
+	color: #fff;
+	font-size: 30px;
+	font-weight: 700;
+
+	height: 100%;
+	width: 302px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.header_nav {
+	display: flex;
+	gap: 30px;
+}
+.header_link {
+	color: #6c6c6c;
+	font-size: 16px;
+	font-weight: 700;
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+	height: 100px;
+	align-items: center;
+}
+.header_logo {
+	background-color: #8fe859;
+	color: #fff;
+	font-size: 30px;
+	font-weight: 700;
+
+	height: 100%;
+	width: 302px;
+}
+.header_logo {
+	background-color: #8fe859;
+	color: #fff;
+	font-size: 30px;
+	font-weight: 700;
+
+	height: 100%;
+	width: 302px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.section-hello {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 600px;
+	background-image: url('./img/bg.png');
+}
+.section-hello_left {
+	width: 50%;
+}
+.section-hello_right {
+	width: 50%;
+}
+.section-hello_right img {
+	height: 100%;
+	width: 100%;
+}
+.section-hello_title {
+	color: #000;
+	font-size: 55px;
+	font-weight: 700;
+}
+.section-hello__p {
+	color: #6c6c6c;
+	font-size: 30px;
+	font-weight: 700;
+}
+.footer {
+	display: flex;
+	justify-content: space-between;
+	background-color: #8fe859;
+	height: 200px;
+	align-items: center;
+}
+.footer_nav-logo {
+	width: 300px;
+	height: 98px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.footer_nav-logo a {
+	color: #fff;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 700;
+}
+.footer_nav {
+	display: flex;
+	flex-direction: column;
+
+	gap: 0px 20px;
+}
+
+.footer_nav a {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.footer_nav-socials {
+	display: flex;
+	flex-direction: row;
+
+	gap: 0px 20px;
+}
+
+.footer_nav-social {
+	width: 60px;
+	height: 60px;
+	background-color: #fff;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+a:hover {
+	color: darkseagreen;
+	transition-duration: 1.2s;
+	transition-timing-function: ease;
+}
+a:active {
+	color: greenyellow;
+}
+.header_link:hover {
+	color: #8fe859;
+	font-size: 18px;
+
+	transition-property: all;
+	transition-duration: 0.3s;
+	transition-timing-function: ease;
+}
+
+.aboutme_title {
+	color: rgba(119, 197, 71, 0.97);
+	font-size: 35px;
+	font-weight: 700;
+}
+.aboutme_roket-top {
+	position: relative;
+	height: 60px;
+}
+.aboutme_roket-top svg {
+	position: absolute;
+	top: 0px;
+
+	height: 60px;
+	width: 60px;
+
+	animation-name: animate;
+	animation-duration: 1s;
+}
+@keyframes animate {
+	0% {
+		left: 0px;
+	}
+	50% {
+		left: 100px;
+	}
+	100% {
+		left: 0px;
+	}
+}
+
+
+.mehobby-title{
+	font-size: 35px;
+	font-weight: 700;
+	color: #77c547;
+}
+.s-elem__content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+}
+
+.s-elem__img{
+	width: 250px;
+	height: 250px;
+
+	background-color: #77c547;
+	border-radius: 50%;
+}
+
+
+.img-1{
+
+	background-image: url("./img/KLS_000001_03467_1_t218_185946.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.img-2{
+	background-image: url("./img/cb4e6cef90e19a7c853eca93c72e86d6.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.img-3{
+	background-image: url("./img/06I7bbif1kvA2mg1aVqw.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.img-4{
+	background-image: url("");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.img-5{
+	background-image: url("./img/1647547148_16-kartinkin-net-p-kartinki-fnaf-na-rabochii-stol-16.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}

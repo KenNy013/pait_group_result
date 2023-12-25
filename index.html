@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Результаты по обучению веб программированию</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="./style/index.css">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+
+  <div class="modal fade modal-xl" id="modal-html" tabindex="-1" aria-labelledby="modal-html" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Что было изученно по HTML</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul class="list-group list-group-flush list-group-numbered">
+            <li class="list-group-item">Введение в HTML</li>
+            <li class="list-group-item">Структура HTML-документа</li>
+            <li class="list-group-item">Теги и атрибуты HTML</li>
+            <li class="list-group-item">Изображения и HTML</li>
+            <li class="list-group-item">Гиперссылки в HTML</li>
+            <li class="list-group-item">Формы и HTML</li>
+            <li class="list-group-item">Мета-информация и заголовок в HTML</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade modal-xl" id="modal-css" tabindex="-1" aria-labelledby="modal-css" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Что было изученно по CSS</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul class="list-group list-group-flush list-group-numbered">
+            <li class="list-group-item">Введение в CSSL</li>
+            <li class="list-group-item">Синтаксис CSS</li>
+            <li class="list-group-item">Селекторы в CSS</li>
+            <li class="list-group-item">Свойства шрифта в CSS</li>
+            <li class="list-group-item">Блочная модель в CSS</li>
+            <li class="list-group-item">Позиционирование в CSS</li>
+            <li class="list-group-item">Сетки и флексбоксы в CSS</li>
+            <li class="list-group-item">Псевдоклассы и псевдоэлементы в CSS</li>
+            <li class="list-group-item">Анимация и трансформации в CSS</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <header class="page-header">
+    <div class="container">
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+
+          <svg width="250" height="50" viewBox="0 0 435 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0 30C0 13.4315 13.4315 0 30 0H90C95.5228 0 100 4.47715 100 10V90C100 95.5228 95.5228 100 90 100H10C4.47716 100 0 95.5228 0 90V30Z"
+              fill="#19469D" />
+            <path d="M27.814 71V30.4H37.21V71H27.814ZM55.2553 71V38.056H42.2633V30.4H77.6433V38.056H64.6513V71H55.2553Z"
+              fill="#CFECF5" />
+            <path
+              d="M123.716 41.48L123.293 32.691L139.038 16.1H147.498L133.304 31.375L129.074 35.887L123.716 41.48ZM116.901 49V16.1H124.468V49H116.901ZM139.414 49L127.711 34.665L132.693 29.26L148.297 49H139.414ZM159.68 49L145.486 16.1H153.711L166.119 45.24H161.278L173.874 16.1H181.441L167.2 49H159.68ZM178.763 49L193.427 16.1H200.947L215.658 49H207.668L195.636 19.954H198.644L186.565 49H178.763ZM186.095 41.95L188.116 36.169H205.036L207.104 41.95H186.095ZM219.071 49V16.1H225.369L244.78 39.788H241.725V16.1H249.245V49H242.994L223.536 25.312H226.591V49H219.071ZM263.844 49V22.304H253.316V16.1H281.986V22.304H271.458V49H263.844Z"
+              fill="#19469D" />
+            <path
+              d="M123.44 70.19H138.605V75.86H123.44V70.19ZM123.98 83.15H141.125V89H116.735V57.5H140.54V63.35H123.98V83.15ZM146.925 89V57.5H152.955L171.54 80.18H168.615V57.5H175.815V89H169.83L151.2 66.32H154.125V89H146.925ZM183.268 89V57.5H197.578C200.998 57.5 204.013 58.16 206.623 59.48C209.233 60.77 211.273 62.585 212.743 64.925C214.213 67.265 214.948 70.04 214.948 73.25C214.948 76.43 214.213 79.205 212.743 81.575C211.273 83.915 209.233 85.745 206.623 87.065C204.013 88.355 200.998 89 197.578 89H183.268ZM190.558 83.015H197.218C199.318 83.015 201.133 82.625 202.663 81.845C204.223 81.035 205.423 79.895 206.263 78.425C207.133 76.955 207.568 75.23 207.568 73.25C207.568 71.24 207.133 69.515 206.263 68.075C205.423 66.605 204.223 65.48 202.663 64.7C201.133 63.89 199.318 63.485 197.218 63.485H190.558V83.015ZM234.441 89.54C229.971 89.54 226.476 88.295 223.956 85.805C221.436 83.315 220.176 79.76 220.176 75.14V57.5H227.466V74.87C227.466 77.87 228.081 80.03 229.311 81.35C230.541 82.67 232.266 83.33 234.486 83.33C236.706 83.33 238.431 82.67 239.661 81.35C240.891 80.03 241.506 77.87 241.506 74.87V57.5H248.706V75.14C248.706 79.76 247.446 83.315 244.926 85.805C242.406 88.295 238.911 89.54 234.441 89.54ZM270.985 89.54C268.555 89.54 266.29 89.15 264.19 88.37C262.12 87.56 260.32 86.42 258.79 84.95C257.26 83.48 256.06 81.755 255.19 79.775C254.35 77.795 253.93 75.62 253.93 73.25C253.93 70.88 254.35 68.705 255.19 66.725C256.06 64.745 257.26 63.02 258.79 61.55C260.35 60.08 262.165 58.955 264.235 58.175C266.305 57.365 268.57 56.96 271.03 56.96C273.76 56.96 276.22 57.44 278.41 58.4C280.63 59.33 282.49 60.71 283.99 62.54L279.31 66.86C278.23 65.63 277.03 64.715 275.71 64.115C274.39 63.485 272.95 63.17 271.39 63.17C269.92 63.17 268.57 63.41 267.34 63.89C266.11 64.37 265.045 65.06 264.145 65.96C263.245 66.86 262.54 67.925 262.03 69.155C261.55 70.385 261.31 71.75 261.31 73.25C261.31 74.75 261.55 76.115 262.03 77.345C262.54 78.575 263.245 79.64 264.145 80.54C265.045 81.44 266.11 82.13 267.34 82.61C268.57 83.09 269.92 83.33 271.39 83.33C272.95 83.33 274.39 83.03 275.71 82.43C277.03 81.8 278.23 80.855 279.31 79.595L283.99 83.915C282.49 85.745 280.63 87.14 278.41 88.1C276.22 89.06 273.745 89.54 270.985 89.54ZM284.201 89L298.241 57.5H305.441L319.526 89H311.876L300.356 61.19H303.236L291.671 89H284.201ZM291.221 82.25L293.156 76.715H309.356L311.336 82.25H291.221ZM327.738 89V63.44H317.658V57.5H345.108V63.44H335.028V89H327.738ZM349.03 89V57.5H356.32V89H349.03ZM379.096 89.54C376.606 89.54 374.296 89.135 372.166 88.325C370.066 87.515 368.236 86.375 366.676 84.905C365.146 83.435 363.946 81.71 363.076 79.73C362.236 77.75 361.816 75.59 361.816 73.25C361.816 70.91 362.236 68.75 363.076 66.77C363.946 64.79 365.161 63.065 366.721 61.595C368.281 60.125 370.111 58.985 372.211 58.175C374.311 57.365 376.591 56.96 379.051 56.96C381.541 56.96 383.821 57.365 385.891 58.175C387.991 58.985 389.806 60.125 391.336 61.595C392.896 63.065 394.111 64.79 394.981 66.77C395.851 68.72 396.286 70.88 396.286 73.25C396.286 75.59 395.851 77.765 394.981 79.775C394.111 81.755 392.896 83.48 391.336 84.95C389.806 86.39 387.991 87.515 385.891 88.325C383.821 89.135 381.556 89.54 379.096 89.54ZM379.051 83.33C380.461 83.33 381.751 83.09 382.921 82.61C384.121 82.13 385.171 81.44 386.071 80.54C386.971 79.64 387.661 78.575 388.141 77.345C388.651 76.115 388.906 74.75 388.906 73.25C388.906 71.75 388.651 70.385 388.141 69.155C387.661 67.925 386.971 66.86 386.071 65.96C385.201 65.06 384.166 64.37 382.966 63.89C381.766 63.41 380.461 63.17 379.051 63.17C377.641 63.17 376.336 63.41 375.136 63.89C373.966 64.37 372.931 65.06 372.031 65.96C371.131 66.86 370.426 67.925 369.916 69.155C369.436 70.385 369.196 71.75 369.196 73.25C369.196 74.72 369.436 76.085 369.916 77.345C370.426 78.575 371.116 79.64 371.986 80.54C372.886 81.44 373.936 82.13 375.136 82.61C376.336 83.09 377.641 83.33 379.051 83.33ZM401.764 89V57.5H407.794L426.379 80.18H423.454V57.5H430.654V89H424.669L406.039 66.32H408.964V89H401.764Z"
+              fill="#19469D" />
+          </svg>
+
+        </a>
+
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="#" class="nav-link">Пройденные темы</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Результаты детей</a></li>
+        </ul>
+      </header>
+    </div>
+
+  </header>
+
+  <main class="page-main">
+
+
+    <section class="page-main__hero">
+      <div class="container my-5">
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+          <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+            <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Результаты обучения группы: СМ-1</h1>
+            <p class="lead">На сайте представлен процесс обучения детей веб-программированию, который проходит в
+              несколько этапов. Сначала дети изучают основы HTML,затем CSS-стилей.</p>
+          </div>
+          <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden ">
+            <img class="rounded-lg-3" src="./imgs/main.jpg" alt="main" width="720">
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="b-example-divider"></div>
+
+    <section class="page-main__topic container">
+
+      <h2>Пройденный материал</h2>
+      <div class="b-example-divider"></div>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-5 ">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card h-100">
+            <img src="https://wpstudia.ru/wp-content/uploads/2023/08/154000.jpg" class="card-img-top" alt="html-logo">
+            <div class="card-body">
+              <h5 class="card-title">HTML</h5>
+              <p class="card-text">HTML (Hyper Text Markup Language) - это язык разметки гипертекста, который
+                используется для создания веб-страниц. Он позволяет определить структуру страницы, добавить текст,
+                изображения, ссылки и другие элементы. HTML является основой любого веб-сайта и без его знания
+                невозможно создать качественную веб-страницу.</p>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-html">Читать о
+                пройденых темах</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card h-100">
+            <img src="https://thatstevensguy.com/wp-content/uploads/2015/11/css3-logo-1200x576-1.png"
+              class="card-img-top" alt="CSS-logo">
+            <div class="card-body">
+              <h5 class="card-title">CSS</h5>
+              <p class="card-text">CSS (Cascading Style Sheets) - это язык стилей, который позволяет изменять внешний
+                вид веб-страницы. С его помощью можно настроить цвета, шрифты, размеры элементов и многое другое. CSS
+                позволяет сделать страницу более красивой и удобной для чтения.</p>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-css">Читать о пройденых
+                темах</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="b-example-divider"></div>
+
+    <section class="page-main__enducation container">
+      <h2>Результаты обучения</h2>
+      <div class="b-example-divider"></div>
+      <div class="col">
+        <div class="swiper">
+
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="card h-100">
+                <img src="./imgs/1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Сайт Смирновой Софии</h5>
+                  <a href="./projects/Cмирнова София/index.html" class="btn btn-primary">Смотреть сайт</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card h-100">
+                <img src="./imgs/2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Сайт Артема Садохи</h5>
+                  <a href="./projects/Артем Садоха/index.html" class="btn btn-primary">Смотреть сайт</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card h-100">
+                <img src="./imgs/3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Сайт Ивана Якимова</h5>
+                  <a href="./projects/Иван Якимов/index.html" class="btn btn-primary">Смотреть сайт</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card h-100">
+                <img src="./imgs/4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Сайт Константина Конина</h5>
+                  <a href="./projects/Константин Конин/index.html" class="btn btn-primary">Смотреть сайт</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card h-100">
+                <img src="./imgs/5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Сайт Кузьмичевой Анастасии</h5>
+                  <a href="./projects/Кузьмичева Анастасия/index.html" class="btn btn-primary">Смотреть сайт</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card h-100">
+                <img src="./imgs/6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Сайт Лосева Данила</h5>
+                  <a href="./projects/Лосев Данила/index.html" class="btn btn-primary">Смотреть сайт</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card h-100">
+                <img src="./imgs/7.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Сайт Петроченкова Ильи</h5>
+                  <a href="./projects/Петроченков Илья Андреевич/index.html" class="btn btn-primary">Смотреть сайт</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card h-100">
+                <img src="./imgs/8.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Сайт Потапова Романа</h5>
+                  <a href="./projects/Потапов Роман/index.html" class="btn btn-primary">Смотреть сайт</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card h-100">
+                <img src="./imgs/9.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Сайт Футкова Дмитрия</h5>
+                  <a href="./projects/Футков Дмитрий/index.html" class="btn btn-primary">Смотреть сайт</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card h-100">
+                <img src="./imgs/10.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Сайт Чугунова Егора</h5>
+                  <a href="./projects/Чугунов Егор/index.html" class="btn btn-primary">Смотреть сайт</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card h-100">
+                <img src="./imgs/11.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Сайт Ярочкина Тимофея</h5>
+                  <a href="./projects/Ярочкин Тимофей/index.html" class="btn btn-primary">Смотреть сайт</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+      </div>
+    </section>
+
+
+    <div class="b-example-divider"></div>
+
+  </main>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./scripts/app.js"></script>
+</body>
+
+</html>

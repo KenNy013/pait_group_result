@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+	font-family: 'Montserrat', sans-serif;
+}
+
+section{
+	margin-bottom: 100px;
+}
+.header {
+
+	display: flex;
+	justify-content: space-between;
+}
+.header_logo {
+	background-color: brown;
+	color: black;
+	font-size: 30px;
+	font: 700;
+}
+.header_nav {
+	display: flex;
+	gap: 30px;
+}
+.header_link {
+	color: blue;
+	font-size: 16px;
+	font-weight: 700;
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+	height: 100px;
+	align-items: center;
+}
+.header_logo {
+	background-color: rgb(179, 0, 255);
+	color: rgb(111, 0, 255);
+	font-size: 30px;
+	font-weight: 700;
+
+	height: 100%;
+	width: 302px;
+}
+.header_logo {
+	background-color: rgb(102, 0, 255);
+	color: rgb(8, 236, 53);
+	font-size: 30px;
+	font-weight: 700;
+
+	height: 100%;
+	width: 302px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.section-hello {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 600px;
+	background-image: url('./img/Фон.jpg');
+}
+.section-hello_left {
+	width: 50%;
+}
+
+.section-hello_righ {
+	width: 50%;
+	height: 100%;
+}
+.section-hello_righ img {
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}
+.section-hello_title {
+	color: rgb(24, 24, 24);
+	font-size: 55px;
+	font-weight: 700;
+}
+.section-hello-p {
+	color: rgb(207, 255, 196);
+	font-size: 30px;
+	font-weight: 700;
+}
+.footer {
+	display: flex;
+	justify-content: space-between;
+	background-color: #8fe859;
+	height: 200px;
+	align-items: center;
+}
+.footer_nav-logo {
+	width: 300px;
+	height: 98px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.footer_nav-logo a {
+	color: #fff;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.footer_nav {
+	display: flex;
+	flex-direction: column;
+
+	gap: 5px 0px;
+}
+
+.footer_nav a {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+}
+.footer_nav-socials {
+	display: flex;
+	gap: 0px 20px;
+}
+
+.footer_nav-social {
+	width: 60px;
+	height: 60px;
+	background-color: #fff;
+	border-radius: 50%;
+}
+.header_link:hover {
+	color: #8fe859;
+	font-size: 18px;
+	transition-property: all;
+	transition-duration: 0.9s;
+	transition-timing-function: ease;
+}
+.header_link:active {
+	font-weight: 900;
+	color: #8fe859;
+	font-size: 20px;
+
+	transition-property: all;
+	transition-duration: 0.9s;
+	transition-timing-function: ease;
+}
+.header_link:active {
+	font-weight: 900;
+	color: #8fe859;
+	font-size: 20px;
+
+	transition-property: all;
+	transition-duration: 0.9s;
+	transition-timing-function: ease;
+}
+.section-hello__btn {
+	background-color: #70ba42;
+	border: none;
+	border-radius: 20px;
+
+	padding: 10px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 900;
+	min-width: 150px;
+}
+.section-hello__btn:hover {
+	background-color: #70ba42;
+	border: rgb(100, 97, 97);
+
+	transition-property: all;
+	transition-duration: 0.9s;
+	transition-timing-function: ease;
+}
+.section-hello__btn:active {
+	background-color: #70ba42;
+	border: 1px solid rgb(100, 97, 97);
+
+	color: #6c6c6c;
+
+	transition-property: all;
+	transition-duration: 0.9s;
+	transition-timing-function: ease;
+}
+
+.abotme-roket-top {
+	position: relative;
+	height: 60px;
+}
+
+.abotme-roket-top svg {
+	position: absolute;
+	top: 0px;
+
+	height: 30px;
+	width: 30px;
+
+	animation-name: animate;
+	animation-duration: 1s;
+}
+
+.abotme__title {
+	font-size: 35px;
+	font-weight: 700;
+
+	color: #70ba42;
+}
+
+
+.aboutme__ainfo-containar {
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(12, 80px);
+	gap: 30px;
+	grid-template-rows: 300px;
+}
+
+.aboutme__img {
+	grid-column: 2/6;
+
+	border-radius: 10px;
+	background: #d9d9d9;
+}
+
+.aboutme__text {
+	grid-column: 6/12;
+	align-self: center;
+}
+
+.aboutme__btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@keyframes animate {
+	0% {
+		left: 0px;
+	}
+	50% {
+		left: 50%;
+	}
+
+	100% {
+		left: 0px;
+	}
+}
+
+.mehobby__title{
+	font-size: 35px;
+	font-weight: 700;
+	color: #77c547;
+}
+
+.s_elem__content{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 16px;
+}
+
+.s_ele__img{
+	width: 250px;
+	height: 250px;
+
+	background-color: #000;
+	border-radius: 50px;
+}
+
+.s-elem__title {
+	color: #000!important;
+	text-align: center!important;
+	font-size:30px!important;
+	font-weight: 400!important;
+	margin: 20px 0px;
+	}
+	
+	.s-elem__text {
+		color: #8ba3ba!important;
+		text-align: center;	
+		font-size:16px!important;
+		font-weight: 400!important;
+	}
+
+.s_ele__img-3{
+	background-image: url('https://hindi.91techinfo.com/wp-content/uploads/2022/02/Poco-X4-Pro-5G-1.jpg');
+
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.s_ele__img-1{
+	background-image: url('./img/scale_1200.jpg');
+
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.i-1{
+	background-image: url('https://xn--26--8cd0e7ahk.xn--p1ai/wp-content/uploads/2023/11/sambo_.jpg');
+
+	background-size: cover;
+	background-repeat: no-repeat;
+}

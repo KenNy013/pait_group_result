@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;1,100&display=swap');
+
+*{
+	font-family: 'Lobster', sans-serif;
+	font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+	width: 988px;
+	margin: auto;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+
+	height: 100px;
+	align-items: center;
+}
+.header_logo {
+	background-color: azure;
+	font-size: 30px;
+	font-weight: 700;
+
+	height: 100%;
+	width: 302px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.header_nav {
+	display: flex;
+	gap: 30px;
+}
+
+.header_link {
+	color: #4f9834;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.header_link:hover {
+	color: whitesmoke;
+	font-size: 18px;
+
+	transition-property: all;
+	transition-duration: 0.9s;
+	transition-timing-function: ease;
+}
+
+/* /// Секция 1 */
+
+.section-hello {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 600px;
+	background-image: url('./img/Фон.jpg');
+}
+.section-hello_title {
+	color: #000;
+	font-size: 55px;
+}
+
+/* /// Подвал сайта */
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	background-color: springgreen;
+	height: 200px;
+	align-items: center;
+}
+.footer_nav-logo {
+	width: 300px;
+	height: 98px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.footer_nav-logo a {
+	color: aliceblue;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 700;
+}
+.footer_nav {
+	display: flex;
+	flex-direction: column;
+	gap: 5px 0px;
+}
+.footer_nav-socials {
+	display: flex;
+	gap: 15px;
+}
+.footer_nav-social {
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	border-radius: 50%;
+}
+
+/* /// Секция 2 */
+
+.aboutme_wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+}
+.aboutme_title {
+	color: darkviolet;
+	font: 35px;
+	font-weight: 700px;
+}
+
+.aboutme_roker-top {
+	position: relative;
+	height: 60px;
+}
+
+.aboutme_roker-top svg {
+	transform: rotate(45deg);
+	position: absolute;
+
+	animation-name: myAnimate;
+	animation-duration: 10s;
+}
+
+.aboutme_title-container {
+	padding: 0px 110px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
+.aboutme_img {
+	flex: 0 0 410px;
+	height: 410px;
+	border-radius: 410px;
+	background: #d9d9d9;
+}
+
+.aboutme_text {
+	color: #4a4545;
+	font-size: 16px;
+	line-height: 25.6px;
+}
+
+.aboutme_btn {
+	display: flex;
+	justify-content: center;
+}
+/* ///Анимации  */
+
+@keyframes myAnimate {
+	0% {
+		left: 0px;
+	}
+	25% {
+		left: 50%;
+	}
+	50% {
+		transform: rotate(-180deg);
+	}
+	100% {
+		left: 0px;
+	}
+}
+
+.mehobby__title{
+	font-size: 35px;
+	font-weight: 700;
+	color: #7fb196;
+	}
+	.s-elem__content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+	}
+	
+	
+	.s-elem__img {
+	width: 250px;
+	height: 250px;
+	
+	
+	background: #7fb196;
+	border-radius: 50%;
+	}
+	
+	
+	
+	.s-elem__title {
+	color: #000!important;
+	text-align: center!important;
+	font-size:30px!important;
+	font-weight: 400!important;
+	margin: 20px 0px;
+	}
+	
+	.s-elem__text {
+		color: #8ba3ba!important;
+		text-align: center;	
+		font-size:16px!important;
+		font-weight: 400!important;
+	}
+
+
+	.i-1{
+		background-image: url('https://yt3.googleusercontent.com/KE4TcnnpPTF0BrPLC-uaSx7M8NkDT_SHPlTbxqBbEYmHLI2i6HeU0zA_CEnvcL-jcgLQdB4StA=s900-c-k-c0x00ffffff-no-rj');
+		background-size: cover;
+	}
+
+	.i-2{
+
+		background-image: url('./img/1695982438_gas-kvas-com-p-kartinki-amongus-43.jpg');
+		background-size: cover;
+	}
+
+
+	.i-3{
+		background-image: url('./img/bf7840b2cb3720651744f5057740e0b2.jpg');
+		background-size: cover;
+	}
+
+	.i-4{
+
+		background-image: url('.papik.pro/uploads/posts/2023-01/1674372846_papik-pro-p-risunok-amogusa-32.jpg');
+		background-size: cover;
+	}
+
+	.i-5{
+
+		background-image: url('https://kartinkof.club/uploads/posts/2022-03/1648727348_47-kartinkof-club-p-kartinki-smeshnie-amongus-52.jpg');
+		background-size: cover;
+	}

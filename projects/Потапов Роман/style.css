@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+	font-family: 'Roboto', sans-serif;
+}
+.container{
+	width: 1140px;
+	margin: 0 auto;
+}
+.header__link {
+	color: rgb(111, 244, 244);
+	font-size: 16px;
+	font-weight: 700;
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+	height: 100px;
+	align-items: center;
+}
+.header__logo {
+	background-color: blue;
+	color: blue;
+	font-size: 30px;
+	font-weight: 700;
+
+	height: 100%;
+	width: 302px;
+}
+.header__logo {
+	background-color: aqua;
+	color: #000;
+	font-size: 30px;
+	font-weight: 700;
+
+	height: 100%;
+	width: 302px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.header__nav {
+	display: flex;
+	gap: 30px;
+}
+
+.section_hello {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	height: 600px;
+	background-image: url('./img/Фон.jpg');
+
+	
+}
+.section_hello__wrapper{
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	gap: 10px;
+}
+.section_hello__left {
+	grid-column: 2/7;
+	align-self: center;
+}
+
+.section_hello__right {
+	height: 100%;
+	grid-column: 8/13;
+}
+
+.section_hello__right img{
+	height: 100%;
+	width: 100%;
+}
+
+.section_hello__title {
+	color: #000;
+	font-size: 55px;
+	font-weight: 700;
+}
+.section_hello__p {
+	color: #6c6c6c;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.section-hello__right img {
+	height: 100%;
+	width: 100%;
+}
+.footer {
+	display: flex;
+	justify-content: space-between;
+	background-color: #8fe859;
+	height: 200px;
+	align-items: center;
+}
+.footer__nav-logo {
+	width: 300px;
+	height: 98px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer__nav-logo a {
+	color: #fff;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.footer__nav {
+	display: flex;
+	flex-direction: column;
+
+	gap: 5px 0px;
+}
+
+.footer__nav a {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.footer__nav-socials {
+	display: flex;
+	gap: 0px 20px;
+}
+
+.footer__nav-social {
+	width: 60px;
+	height: 60px;
+	background-color: #fff;
+	border-radius: 50%;
+}
+
+a:hover {
+	color: aqua;
+}
+.header__link:hover {
+	color: #8fe859;
+	font-size: 18px;
+
+	transition-propety: all;
+	transition-duration: 0.9s;
+	transition-timing-function: ease;
+}
+.header__link:active {
+	font-weight: 900;
+	color: #8fe859;
+	font-size: 20px;
+
+	transition-property: all;
+	transition: duration;
+	transition-timing-function: ease;
+}
+
+.aboutme_wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+}
+.aboutme_title {
+	color: darkviolet;
+	font-size: 35px;
+	font-weight: 700px;
+}
+
+.aboutme_roker-top {
+	position: relative;
+	height: 60px;
+}
+
+.aboutme_roker-top svg {
+	transform: rotate(45deg);
+	position: absolute;
+
+	animation-name: myAnimate;
+	animation-duration: 10s;
+}
+
+.aboutme_title-container {
+	padding: 0px 110px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
+.aboutme_img {
+	flex: 0 0 410px;
+	height: 410px;
+	border-radius: 410px;
+	background: #d9d9d9;
+}
+
+.aboutme_text {
+	color: #4a4545;
+	font-size: 16px;
+	line-height: 25.6px;
+}
+
+.aboutme_btn {
+	display: flex;
+	justify-content: center;
+}
+
+@keyframes myAnimate {
+	0% {
+		left: 0px;
+	}
+	25% {
+		left: 50%;
+	}
+	50% {
+		transform: rotate(-180deg);
+	}
+	100% {
+		left: 0px;
+	}
+}
+.mehobby__title{
+font-size: 35px;
+font-weight: 700;
+color:#77c547
+}
+
+.s-elem__cocontent{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-content: center;
+gap: 16px;
+}
+.s-elem__img{
+width: 100%;
+height: 500px;
+background-color: #d9d9d9;
+border-radius: 20px;
+}
+
+.s-elem__title{
+color: #000!important;
+text-align: center;
+font-size: 30px;
+font-weight: 400;
+}
+
+.s-elem__text{
+color: #4a4545;
+text-align: center;
+font-size: 16px;
+font-weight: 400;
+}
+.i-1{
+	background-size: contain;
+	background-image: url("https://gas-kvas.com/uploads/posts/2023-02/1675428856_gas-kvas-com-p-fonovoi-risunok-bmv-33.jpg");
+}
+.i-2{
+ background-size: contain;
+	background-image:url("https://avatars.mds.yandex.net/i?id=4a6f572b79a36398e9a4e0963909a8f2_l-4519035-images-thumbs&n=13")
+}
+
+.i-3{
+background-size: contain;
+background-image: url("https://avatars.mds.yandex.net/i?id=4a6f572b79a36398e9a4e0963909a8f2_l-4519035-images-thumbs&n=13");
+}
+
+
+
+
+
+
+	

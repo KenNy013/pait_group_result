@@ -1,0 +1,325 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.header_logo {
+    background-color: rgb(120, 0, 0);
+    color:rgb(255, 0, 0);
+    font-size:30px;
+    font: 700;
+}
+.header_nav {
+    display: flex;
+    gap: 30px;
+}
+.header_link {
+    color:rgb(115, 115, 251);
+    font-size: 16px;
+    font-weight: 700;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+.header_logo {
+    background-color: rgb(0, 255, 255);
+    color:aquamarine;
+    font-size: 30px;
+    font-weight: 700;
+
+    height: 100%;
+    width: 302px;
+}
+.header_logo {
+    background-color: aqua;
+    color:aliceblue;
+    font-size: 30px;
+    font-weight: 700;
+
+    height: 100%;
+    width: 302px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-hello {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 600px;
+    background-image: url("./img/Фон.jpg");
+}
+.section-hello_left {
+    width: 50%;
+}
+
+.section-hello_righ {
+    width: 50%;
+}
+.section-hello_righ img {
+    height: 100%;
+    width: 100%;
+}
+.section-hello_title {
+    color:black;
+    font-size: 55px;
+    font-weight: 700;
+}
+.section-hello-p {
+    color:rgb(255, 140, 0);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #70ba42;
+    height: 200px;
+    align-items: center;
+}
+.footer_nav-logo {
+    width: 300px;
+    height: 98px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer_nav-logo a {
+    color: #000000;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+.footer_nav{
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px 0px;
+}
+
+.footer_nav a {
+    color: #1e00ff8d;
+    font-size: 16px;
+    font-weight: 700;
+}
+.footer_nav-socials {
+    display: flex;
+    gap: 0px 20px;
+}
+
+
+.footer_nav-social {
+    width: 60px;
+    height: 60px;
+    background-color: #683131;
+    border-radius: 50%;
+}
+a:hover {
+    color:aqua;
+}
+
+a:active {
+    color: red;
+
+
+transition-duration: 1.2s;
+transition-timing-function: ease;
+}
+.header_link:hover {
+    color:aquamarine;
+    font-size: 18px;
+
+    transition-property: a11;
+    transition-duration: 0.9;
+    transition-timing-function: ease;
+}
+.header_link:active {
+    font-weight: 900;
+    color: #8fe859;
+    font-size: 20px;
+
+    transition-property: a11;
+    transition-duration: 0.9s;
+    transition-timing-function: ease;
+}
+.footer_link:active {
+    font-weight: 900;
+    color: #8fe859;
+    font-size: 20px;
+
+    transition-property: a11;
+    transition-duration: 0.9s;
+    transition-timing-function: ease;
+}
+.section-hello_btn {
+    background-color: #8fe859;
+    border: none;
+    border-radius: 20px;
+
+    padding: 20px;
+
+    color: #fff;
+    font-size: 16px;
+    font-weight: 900;
+}
+.section-hello_btn:hover {
+    background-color: #70ba42;
+    border: 1px solid rgb(100, 97, 97);
+    transition-property: all;
+    transition-duration: 0.9s;
+    transition-timing-function: ease;
+}
+
+.section-hello_btn:active {
+    background-color: #70ba42;
+    border: 1px solid rgb(100, 97, 97);
+
+    color: #6c6c6c;
+
+    transition-property: a11;
+    transition-duration: 0.9s;
+    transition-timing-function: ease;
+}
+
+
+
+.aboutme_title {
+    color: rgba(119, 197, 71, 0.97);
+    font-size: 35px;
+    font-weight: 700;
+}
+.aboutme_info-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 0px 110px;
+    margin: 20px 0px;
+}
+
+.aboutme_rocket-top {
+    position: relative;
+    height: 60px;
+}
+
+.aboutme_rocket-top svg {
+    position: absolute;
+    top: 0px;
+
+    height: 60px;
+    width: 60px;
+
+    animation-name:animate;
+    animation-duration: 1s;
+}
+
+@keyframes animate {
+    0% {
+        left: 0px;
+    }
+    50% {
+        left: 100px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+
+.aboutme-btn svg {
+    position:relative;
+
+    animation-name: animatesvgbtn;
+    animation: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animatesvgbtn {
+    0% {
+        top: 10px;
+    }
+    50% {
+        top: 0;
+    }
+    100% {
+        top: 10px;
+    }
+}
+
+.aboutme_img {
+    width: 410px;
+    height: 410px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background-color: #d9d9d9;
+}
+
+.aboutme_text {
+    color: #4a4545;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+}
+
+.aboutme-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mehobby__title{
+    font-size: 35px;
+    font-weight: 700;
+    color: #7fb196;
+    }
+    .s-elem__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    }
+    
+    
+    .s-elem__img {
+    width: 250px;
+    height: 250px;
+    
+    
+    background: #7fb196;
+    border-radius: 50%;
+    }
+    
+    
+    
+    .s-elem__title {
+    color: #000!important;
+    text-align: center!important;
+    font-size:30px!important;
+    font-weight: 400!important;
+    margin: 20px 0px;
+    }
+    
+    .s-elem__text {
+        color: #8ba3ba!important;
+        text-align: center;	
+        font-size:16px!important;
+        font-weight: 400!important;
+    }
+
+    .i-1{
+        background-image: url('https://fikiwiki.com/uploads/posts/2022-02/1644927339_44-fikiwiki-com-p-fortnait-krasivie-kartinki-45.jpg');
+        background-size: cover;
+
+    }
+
+    .i-2{
+        background-image: url('https://w.forfun.com/fetch/91/91611532ddd20725979308210733298a.jpeg');
+        background-size: cover;
+    }

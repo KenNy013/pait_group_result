@@ -1,0 +1,280 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+* {
+    font-family: 'Rubik Mono One', monospace;
+}
+
+
+section{
+    margin-bottom: 100px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.header__logo{
+
+}
+
+.header__logo{
+
+    background-color: #8fe859;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+
+    height: 100%;
+    width: 302px;
+}
+.header__nav{
+    color:#6c6c6c; 
+    font-size: 16p;
+    font-weight: 700;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+.header__logo{
+    background-color: #8fe859;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+
+
+    height: 100%;
+    width: 302px;
+}
+
+.header__logo{
+    background-color: #8fe859;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+
+    
+   height: 100%;
+   width: 302px;
+   
+   
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.section-hello{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 600px;
+    background-image: url("./img/Фон.jpg");
+}
+.section-hello__left{
+    width: 50%;
+}
+.section-hello__right{
+    width: 50%;
+}
+.section-hello__right img{
+    height: 100%;
+    width: 100%;
+}
+
+.section-hello__title{color: #000;
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.section-hello__p{
+    color: #6c6c6c;
+    font-size: 30px;
+    font-weight: 700;
+}
+.footer {
+display: flex;
+justify-content:space-between ;
+background-color: #8fe859;
+height: 200px;
+align-items: center;
+}
+.footer__nav-logo {
+    width: 300px;
+    height: 98px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer__nav-logo a {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.footer__nav {
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px 0px; 
+}
+
+.footer__nav a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.footer__nav-socials {
+    display:flex;
+    gap: 0px 20px;
+}
+
+.footer__nav-socials {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+
+    transition-duration: 1.2s;
+    transition-timing-function: ease;
+}
+
+
+
+.header__link:hover{
+    color: #8fe859;
+    font-size: 18px;
+
+    transition-property: all;
+    transition-duration: 0.9s;
+    transition-timing-function: ease;
+}
+
+
+.header__link:active{
+    font-weight: 900;
+    color: #8fe859;
+    font-size: 20px;
+
+    transition-property: all;
+    transition-duration: 0.9s;
+    transition-timing-function: ease;
+}
+
+.footer__link::after {
+    font-weight: 900;
+    color: #8fe859;
+    font-size: 20px;
+
+    transition-property: all;
+    transition-duration: 0.9s;
+    transition-timing-function: ease;
+}
+ 
+
+.aboutme__roket-top {
+    position: relative;
+    height: 60px;
+
+
+}
+
+.aboutme__roket-top svg {
+    position: absolute;
+    top: 0px;
+
+    transform: rotate(45deg);
+
+    animation-name: animate;
+    animation-duration: 2s;
+}
+
+@keyframes animate{
+    0% {
+    left: 0px;
+
+   
+    }
+    50% {
+    left: 1000px;
+    transform: rotate(225deg);
+    }
+    100% {
+    left: 0px;
+    transform: rotate(45deg);
+    }
+}
+
+
+
+.mehobby__title{
+font-size: 35px;
+font-weight: 700px;
+color:#77c547;
+}
+
+
+.s-elem__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 16px;
+
+}
+ 
+.s-elem__img{
+width: 250px;
+height: 250px;
+
+background-color: #d9d9d9;
+border-radius: 50%;
+}
+
+.s-elem__title{
+    color: #000;
+    text-align:center;
+    font-size: 30px;
+    font-weight:400 ;
+}
+
+.s-elem__text{
+    color: #4a4545;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+    
+
+.s-elem__img-1{
+    background-image: url("./img/images.jpg");
+    
+    background-size: cover;
+}
+
+
+.s-elem__img-2{
+    background-image: url("./img/Без названия.jpg");
+
+    background-size: cover;
+}
+
+.s-elem__img-3{
+    background-image: url("./img/images.jpg");
+
+    background-size: cover;
+}
+
+
+.s-elem__img-4{
+    background-image: url("./img/Без названия.jpg");
+
+    background-size: cover;
+}

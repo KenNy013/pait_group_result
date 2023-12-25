@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+	font-family: 'Merriweather', serif;
+}
+
+section{
+	margin-bottom: 100px;
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__logo {
+	background-color: rgb(13, 255, 0);
+	color: aliceblue;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.header__nav {
+	display: flex;
+	gap: 30px;
+}
+
+.header__link {
+	color: #6c6c6c;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	height: 100px;
+	align-items: center;
+}
+
+.header__logo {
+	background-color: blueviolet;
+	color: #fff;
+	font-size: 30px;
+	font-weight: 700;
+
+	height: 100%;
+	width: 302px;
+}
+
+.header__logo {
+	background-color: deeppink;
+	color: #fff;
+	font-size: 30px;
+	font-weight: 700;
+
+	height: 100%;
+	width: 302px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.section-hello {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 600px;
+	background-image: url('./img/Фон.jpg');
+}
+
+.section-hello__left {
+	flex: 0 0 50%;
+}
+
+.section-hell__right {
+	flex: 0 0 50%;
+	height: 100%;
+}
+
+.section-hell__right img {
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}
+
+.section-hello__title {
+	color: #000;
+	font-size: 55px;
+	font-weight: 700;
+}
+.section-hello_p {
+	color: #6c6c6c;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	background-color: #8fe859;
+	height: 200px;
+	align-items: center;
+}
+
+.footer_nav-logo {
+	width: 300px;
+	height: 98px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.footer_nav-logo a {
+	color: #fff;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.footer_nav {
+	display: flex;
+	flex-direction: column;
+	gap: 5px 0px;
+}
+
+.footer_nav a {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+}
+ 
+.footer_nav-socials {
+	display: flex;
+	gap: 0px 20px;
+}
+.footer_nav-social {
+	width: 60px;
+	height: 60px;
+	background-color: #fff;
+	border-radius: 50%;
+}
+
+
+/* ///// */
+
+.aboutme__wrapper {
+	display: flex;
+	flex-direction: column;
+
+	gap: 60px;
+}
+.aboutme-roket-top {
+	position: relative;
+	height: 60px;
+	width: 100%;
+}
+
+.aboutme-roket-top svg {
+	position: relative;
+	top: 0px;
+
+	rotate: 45deg;
+
+	height: 60px;
+	width: 60px;
+
+	animation-name: animete;
+	animation-duration: 15s;
+}
+
+.aboutme__title {
+	font-size: 35px;
+	font-weight: 700;
+}
+
+.aboutme__ainfo-containar {
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(12, 80px);
+	gap: 30px;
+	grid-template-rows: 410px;
+}
+
+.aboutme__img {
+	grid-column: 2/6;
+
+	border-radius: 410px;
+	background: #d9d9d9;
+}
+
+.aboutme__text {
+	grid-column: 6/12;
+	align-self: center;
+}
+
+.aboutme__btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* ///Анимации */
+@keyframes animete {
+	0% {
+		left: 0px;
+	}
+	25% {
+		left: calc(100% - 60px - 60px);
+	}
+	50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		left: 0px;
+	}
+}
+
+
+
+.mehobby_title{
+	font: size 35px;
+	font-weight: 700;
+	color:#77c547;
+}
+
+.s-elem_content { 
+display: flex;
+flex-direction: column;
+justify-content: center; 
+align-items: center;
+gap: 16px;
+}
+
+.s-elem_img {
+width: 90%;
+height: 250px;
+
+background-color: #d9d9d9;
+ border-radius: 10%;
+}
+
+.s-elem_title {
+color: #000!important;
+text-align: center!important;
+font-size:30px!important;
+font-weight: 400!important;
+margin: 20px 0px;
+
+}
+	
+.s-elem_text {
+color: #8ba3ba!important;
+text-align: center;	
+font-size:16px!important;
+font-weight: 400!important;
+
+}
+
+.img-1{
+	background-image: url("./img/1.jpg");
+	background-size: contain;
+}
+
+.img-2{
+	background-image: url("./img/2.jpg");
+	background-size: contain;
+}
+.img-3{
+	background-image: url("./img/3.jpg");
+	background-size: contain;
+}
+
+.img-4{
+	background-image: url("./img/4.jpg");
+	background-size: contain;
+}
+
+.img-5{
+		background-image: url("./img/5.jpg");
+		background-size: contain;
+}
+
+.img-6{
+	background-image: url("./img/6.jpg");
+	background-size: contain;
+}
